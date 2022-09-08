@@ -17,7 +17,7 @@ pause            on						// code breaks, useful for debugging
 set varabbrev    off					// this helps you avoid mistakes such as accidently referencing the wrong variable
 version			 17.0 // Or your current version
 
-*** IETOOLKIT Package ***
+*** IETOOLKIT Package Version ***
 ieboilstart, versionnumber(17.0) // Replace 17.0 with STATA version number. Only major releases are supported
 `r(version)'
 
@@ -71,7 +71,9 @@ else {
 }
 
 //# 1.4 Log activities
+
 // Set Log File
-log using "${logfile}[LogFileName].smcl" , replace // Replace LogFileName
+log using "${logfile}[LogFileName].smcl" , replace // Replace LogFileName, you can replace smcl with txt or other file extensions if they fit your purpose.
+
 // Close Log File
 capture log close // put this at the end of the last do file
