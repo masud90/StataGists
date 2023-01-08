@@ -44,18 +44,18 @@ global	temp		"`workingdir'/02 Temp Files/"
 global	output		"`workingdir'/03 Output/"
 global	tables		"`workingdir'/03 Output/01 Tables/"
 global	graphs		"`workingdir'/03 Output/02 Graphs/"
-global 	logfile		"``workingdir'/04 Log Files/"
+global 	logfile		"`workingdir'/04 Log Files/"
 
 *If needed, install the directories used in the process. This code assumes that you already have 00 Raw Data and 01 Do Files folders in the root folder.
-confirmdir "`swdLocal'\02 Temp Files\"
+confirmdir "`workingdir'\02 Temp Files\"
 scalar define n_temp=_rc
-confirmdir "`swdLocal'\03 Output\"
+confirmdir "`workingdir'\03 Output\"
 scalar define n_output=_rc
-confirmdir  "`swdLocal'\04 Log Files\"
+confirmdir  "`workingdir'\04 Log Files\"
 scalar define n_logf=_rc
-confirmdir  "`swdLocal'\03 Output\01 Tables\"
+confirmdir  "`workingdir'\03 Output\01 Tables\"
 scalar define n_table=_rc
-confirmdir  "`swdLocal'\03 Output\02 Graphs\"
+confirmdir  "`workingdir'\03 Output\02 Graphs\"
 scalar define n_graph=_rc
 scalar define check=n_temp+n_output+n_logf+n_table+n_graph
 di check
