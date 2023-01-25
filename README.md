@@ -20,3 +20,4 @@ Pull request housekeeping:
 Helpful links:
 1. [Top 25 Stata Visualizations — With Full Code, Fahad Mirza on Medium, November 19, 2022](https://medium.com/the-stata-gallery/top-25-stata-visualizations-with-full-code-668b5df114b6)
 2. [Stata-Python API for UN Comtrade bulk data, Steve Wong on Medium, August 5, 2022](https://medium.com/the-stata-gallery/api-for-un-comtrade-bulk-data-201f679ba632)
+3. [The Stata Guide by Asjad Naqvi](https://github.com/asjadnaqvi/The-Stata-Guide)
