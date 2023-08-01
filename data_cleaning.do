@@ -156,3 +156,16 @@ varmanage // access all variables to manually change variable labels and/ or val
 * "fre" is a user-written package to view all values of a variable and their labels
 ssc install fre, replace
 fre foreign
+
+
+*************************************
+*** MASUD RAHMAN ********************
+*************************************
+
+**# Drop missing variables
+foreach var of varlist _all {
+     capture assert mi(`var')
+     if !_rc {
+        drop `var'
+     }
+ }
