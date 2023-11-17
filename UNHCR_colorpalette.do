@@ -34,3 +34,5 @@ graph bar (mean) bp, over(agegrp) over(when) asyvars blabel(bar, format(%3.0f)) 
 // Resets the style if you want to use default or other schemes
 grstyle clear 
 
+// For LaTeX font consistency, please download and install Computer Modern TTF font from https://www.fontsquirrel.com/fonts/computer-modern and then run the following command:
+graph set window fontface "CMU Serif Roman"
